@@ -1,0 +1,87 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lime: hsl(61, 70%, 52%);
+    --red: hsl(4, 69%, 50%);
+    --slate-100: hsl(202, 86%, 94%);
+    --slate-300: hsl(203, 41%, 72%);
+    --slate-500: hsl(00, 26%, 54%);
+    --slate-700: hsl(200, 24%, 40%);
+    --slate-900: hsl(202, 55%, 16%);
+}
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    /* background-color: aqua; */
+    height: 100vh;
+    font-weight: 500;
+    /* color: var(--slate-300) */
+}
+
+.calculator {
+    height: 75%;
+    width: 90%;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator * {
+    padding: 0.5em;
+}
+
+.calculator h1 {
+    padding-bottom: 0;
+}
+
+.calculator h1 + button {
+    border: none;
+    width: 25%;
+    background-color: var(--white);
+}
+
+a[href="#"] {
+    color: var(--slate-300);
+}
+
+.text-input{
+    position: relative; 
+}
+
+.text-input span {
+    position: absolute;
+    width: 10%;
+    right: 1.3em;
+    top: 50%;
+    translate: -20% -15%;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.text-input:first-of-type span {
+    left: 0.8em;
+    translate: 0 -15%;
+}
+
+.text-input input[name="mortgage-amount"] {
+    width: 80%;
+    padding-left: 2.5em;
+    background-image: linear-gradient(to right, var(--slate-100) 10%, var(--white) 10%);
+}
+
+.text-input input[name="mortgage-term"] {
+    background-image: linear-gradient(to right, var(--white) 80%, var(--slate-100) 80%);
+}
+
+input[type="text"] {
+    width: 90%;
+    margin-top: 0.5em;
+    background-image: linear-gradient(to right, var(--white) 90%, var(--slate-100) 90%);
+    border-color: var(--slate-300);
+    border-radius: 5px;
+}
