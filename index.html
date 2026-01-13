@@ -16,6 +16,7 @@
       <h1>Mortgage Calculator</h1>
       <button><a href="#">Clear All</a></button>
 
+
       <div class="text-input">
         <label for="mortgage-amount">Mortgage Amount</label>
         <span>$</span>
@@ -32,21 +33,20 @@
         <span>%</span>
       </div>
 
-
-      
-
-
-
-      
-
       <label for="mortgage-type">Mortgage Type</label>
 
-      <input type="radio" name="repayment" id="repayment">
-      <label for="repayent">Repayment</label>
-      <input type="radio" name="interest" id="interest">
-      <label for="interest">Interest Only</label>
+      <div class="radio-input">
+        <input type="radio" name="mortgage-type" id="repayment">
+        <label for="repayent">Repayment</label>
+      </div>
+      <div class="radio-input">
+        <input type="radio" name="mortgage-type" id="interest">
+        <label for="interest">Interest Only</label>
+      </div>
 
-      <button>Calculate Repayments</button>
+      <button>
+        <img src="./assets/images/icon-calculator.svg" alt="Calculator">
+        Calculate Repayments</button>
     </section>
     <section class="resutls">
       <h2>Results shown here</h2>

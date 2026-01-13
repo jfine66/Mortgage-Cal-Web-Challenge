@@ -18,16 +18,17 @@ main {
     /* background-color: aqua; */
     height: 100vh;
     font-weight: 500;
-    /* color: var(--slate-300) */
+    color: var(--slate-700);
 }
 
 .calculator {
     height: 75%;
     width: 90%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .calculator * {
@@ -38,10 +39,17 @@ main {
     padding-bottom: 0;
 }
 
+
 .calculator h1 + button {
     border: none;
     width: 25%;
-    background-color: var(--white);
+    background: none;
+    text-align: left;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    bottom: 1em;
+
 }
 
 a[href="#"] {
@@ -55,17 +63,21 @@ a[href="#"] {
 .text-input span {
     position: absolute;
     width: 10%;
-    right: 1.3em;
+    right: 0;
     top: 50%;
-    translate: -20% -15%;
+    translate: -10% -15%;
     border-radius: 5px;
     border: none;
+    font-weight: 700;
 }
-
 
 .text-input:first-of-type span {
     left: 0.8em;
     translate: 0 -15%;
+}
+
+.text-input:nth-of-type(2) span {
+    right: 1.5em;
 }
 
 .text-input input[name="mortgage-amount"] {
@@ -78,6 +90,7 @@ a[href="#"] {
     background-image: linear-gradient(to right, var(--white) 80%, var(--slate-100) 80%);
 }
 
+
 input[type="text"] {
     width: 90%;
     margin-top: 0.5em;
@@ -85,3 +98,38 @@ input[type="text"] {
     border-color: var(--slate-300);
     border-radius: 5px;
 }
+
+.radio-input {
+    width: 90%;
+    margin: 0em auto;
+    font-weight: 700;
+    border: 1px solid var(--slate-300);
+    border-radius: 5px;
+}
+
+.radio-input:hover, .radio-input *:hover{
+    cursor: pointer;
+}
+
+button:last-child {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--lime);
+    font-weight: 700;
+    color: var(--slate-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button img {
+    height: 50%;
+}
+
